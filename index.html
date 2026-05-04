@@ -3,80 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2e8b57;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #1e5e3a;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #2e8b57;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
-    <div> class="background"></div>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<div class="background"></div>
+
 <header>
-    <h1>Bom Princípio do Piauí</h1>
-    <p></p>
+    <h1>Bom Princípio</h1>
+    <p>Norte do Piauí
 </header>
 
 <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#turismo">Turismo</a>
-    <a href="#contato">Contato</a>
+    <a href="#">Notícias</a>
+    <a href="#">Turismo</a>
+    <a href="#">Sobre</a>
 </nav>
 
-<section id="sobre">
-    <h2>Sobre a Cidade</h2>
-    <p>
-        Bom Princípio do Piauí é uma cidade localizada no estado do Piauí, 
-        conhecida por sua tranquilidade, cultura local e proximidade com o litoral.
-    </p>
-</section>
+<main>
+    <section class="destaque">
+        <img src="img/Parabens-bp.png" alt="aniversario">
+        <div>
+            <h2>O aniversário de Bom Princípio do Piauí é um momento especial que celebra a história, a cultura e o desenvolvimento dessa cidade que cresce com o esforço de seu povo.
+            </h2>
+            <p>Desde sua fundação, Bom Princípio do Piauí tem construído sua identidade com base na união da comunidade, nas tradições locais e na valorização de suas raízes. Ao longo dos anos, a cidade passou por transformações importantes, evoluindo em infraestrutura, educação e qualidade de vida, sem deixar de lado seus costumes e sua essência. As comemorações de aniversário costumam reunir moradores e visitantes em eventos culturais, apresentações, festividades religiosas e momentos de confraternização que reforçam o sentimento de pertencimento.
 
-<section id="turismo">
-    <h2>Pontos Turísticos</h2>
-    <ul>
-        <li>Praias próximas</li>
-        <li>Festas tradicionais</li>
-        <li>Belezas naturais</li>
-    </ul>
-</section>
+Concluir mais um ano de história é reconhecer o caminho percorrido e renovar as esperanças para o futuro. O aniversário de Bom Princípio do Piauí não é apenas uma data no calendário, mas uma oportunidade de celebrar conquistas, homenagear aqueles que contribuíram para o crescimento da cidade e fortalecer os laços que unem sua população. Que os próximos anos tragam ainda mais progresso, mantendo viva a identidade e o orgulho de ser parte dessa cidade.</p>
+        </div>
+    </section>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Email: contato@bomprincipio.pi.gov.br</p>
-</section>
+    <!-- NOTÍCIAS -->
+    <section class="noticias">
 
-<footer>
-    <p>&copy; 2026 - Bom Princípio do Piauí</p>
-</footer>
+        <article class="card">
+            <img src="img/bandeira-bp.png">
+            <h3>Bandeira do Bom Princípio</h3>
+            <p>A bandeira de Bom Princípio do Piauí (PI), criada após a emancipação em 1982, é o símbolo oficial do município, juntamente com o brasão, representando a identidade e as raízes locais. As informações específicas sobre os autores e a data exata de criação da bandeira não estão publicamente identificadas ou</p>
+        </article>
 
+        <article class="card">
+            <img src="img/bandeira-pi.png">
+        </article>
+
+    </section>
+
+</main>
 </body>
 </html>

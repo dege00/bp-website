@@ -1,52 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     color: #333;
 }
 
-/* fundo com blur */
 .background {
     position: fixed;
     width: 100%;
     height: 100%;
-
-    background: url("img/bp-site.desfoque.png") no-repeat center/cover;
-
-    filter: blur(2px);
+    background: url("../img/bp-site.desfoque.png") no-repeat center/cover;
+    filter: blur(6px);
     z-index: -1;
 }
 
-/* resto do site */
 header {
-    background-color: #2e8b57;
+    background: linear-gradient(to bottom, #1400cd, #030363);
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 25px;
 }
 
+
 nav {
-    background-color: #1e5e3a;
-    padding: 10px;
+    background: #030363;
     text-align: center;
+    padding: 10px;
 }
 
 nav a {
     color: white;
-    margin: 10px;
+    margin: 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-section {
-    padding: 20px;
-    background: rgba(255,255,255,0.9);
-    margin: 20px;
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.destaque {
+    display: flex;
+    background: rgba(143, 141, 141, 0.514);
     border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-footer {
-    background-color: #2e8b57;
-    color: white;
-    text-align: center;
-    padding: 10px;
+h2 {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.destaque img {
+    width: 300px;
+    object-fit: cover;
+}
+
+.destaque div {
+    padding: 20px;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: rgba(143, 141, 141, 0.514);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
